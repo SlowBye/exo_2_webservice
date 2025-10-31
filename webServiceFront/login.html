@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion - Bloc-notes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="page active">
+            <h1>Connexion</h1>
+            <p>Accédez à vos notes</p>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="loginEmail">Login</label>
+                    <input type="text" id="loginEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Mot de passe</label>
+                    <input type="password" id="loginPassword" required>
+                </div>
+                <div class="error" id="loginError"></div>
+                <button type="submit" class="btn">Se connecter</button>
+            </form>
+            <div class="link">
+                <p>Pas encore de compte ? <a href="register.html">S'inscrire</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>

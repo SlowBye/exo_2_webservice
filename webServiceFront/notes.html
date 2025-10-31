@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mes Notes - Bloc-notes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container notes-container">
+    <div class="page active">
+      <div class="header">
+        <h1>Mes Notes</h1>
+        <button class="btn btn-secondary btn-small" id="logoutBtn">Déconnexion</button>
+      </div>
+
+      <div class="note-form">
+        <h2 style="margin-bottom: 20px; color: #333;" id="formTitle">Nouvelle note</h2>
+        <form id="noteForm">
+          <div class="form-group">
+            <label for="noteTitle">Titre</label>
+            <input type="text" id="noteTitle" required />
+          </div>
+          <div class="form-group">
+            <label for="noteContent">Contenu</label>
+            <textarea id="noteContent" required></textarea>
+          </div>
+          <div style="display: flex; gap: 10px;">
+            <button type="submit" class="btn" id="saveNoteBtn">Ajouter la note</button>
+            <button type="button" class="btn btn-secondary" id="cancelEditBtn" style="display: none;">Annuler</button>
+          </div>
+        </form>
+      </div>
+
+      <div id="notesListContainer">
+        <div class="empty-state">
+          <div class="empty-state-icon">📝</div>
+          <h3>Aucune note pour le moment</h3>
+          <p>Créez votre première note ci-dessus</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="notes.js" defer></script>
+</body>
+</html>
